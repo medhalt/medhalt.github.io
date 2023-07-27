@@ -107,16 +107,13 @@ li {
     
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark" id="navbar1" style="background-color: #242582;">
       <div class="container">
-          <a class="navbar-brand mr-1 mb-1 mt-0" href="../">Med-Halt</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
-              <span class="navbar-toggler-icon"></span>
-          </button>
+          <a class="title mr-1 mb-1 mt-0" href="./">Med-Halt</a>
+          <a class="contact" href="mailto:medmcqa@gmail.com">Contact Us</a>
           
-          <ul class="navbar-nav ml-auto">
+          <!-- <ul class="navbar-nav ml-auto">
               <li class="nav-item">
-                  <a class="nav-link" href="#github">Contact Us</a>
               </li>                    
-          </ul>
+          </ul> -->
       </div>
     </nav>
     <main>
@@ -127,37 +124,22 @@ li {
             <a href="mailto:ankit.pal@saama.com,logesh.umapathi@saama.com,malaikannan.sankarasubbu@saama.com">Ankit Pal, 
             Logesh Kumar Umapathi, 
             Malaikannan Sankarasubbu</a>
-            <!-- <a href="https://lupantech.github.io/">Pan Lu</a><sup>1</sup>, 
-            <a href="https://scholar.google.com/citations?user=u1CNjgwAAAAJ">Baolin Peng</a><sup>2</sup>, 
-            <a href="https://sites.google.com/site/hcheng2site">Hao Cheng</a><sup>2</sup>, 
-            <a href="https://www.microsoft.com/en-us/research/people/mgalley/">Michel Galley</a><sup>2</sup>, 
-            <a href="http://web.cs.ucla.edu/~kwchang/">Kai-Wei Chang</a><sup>1</sup>,  
-            <a href="https://scholar.google.com/citations?user=7k_1QFIAAAAJ&hl=en">Ying Nian Wu</a><sup>1</sup>, 
-            <a href="https://scholar.google.com/citations?user=Al8dyb4AAAAJ&hl=en">Song-Chun Zhu</a><sup>1</sup>, 
-            <a href="https://www.microsoft.com/en-us/research/people/jfgao/">Jianfeng Gao</a><sup>2</sup> 
-            <br>
-            <sup>1</sup>University of California, Los Angeles &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <sup>2</sup> Microsoft Research, Redmond -->
           </p>
           <a class="btn btn-primary" href="#" role="button" >Paper »</a>        
-          <a class="btn btn-info" href="https://github.com/medhalt/medhalt.github.io" role="button" target="_blank">Github »</a>
-          <!-- <a class="btn btn-secondary" href="#" role="button">Demo (Soon) »</a> -->
-
-          
+          <a class="btn btn-info" href="https://github.com/medhalt/medhalt" role="button" target="_blank">Github »</a>
         </div>
 
         <div style="text-align: center;">
           <div class="home-img-cnt">
-            <img src="./assets/images/home.png" data-name="home-1" class="expand-img" alt="Med-HALT: A new benchmark dataset for LLM to test Hallucination in Medical Domain" width="26%" />
-            <img src="./assets/images/home-2.png" data-name="home-2" class="expand-img" alt="Example of Hallucination Of GPT-3.5" width="26%" />
+            <img src="./assets/images/home.png" data-name="home-1" class="expand-img" alt="Med-HALT: A new benchmark dataset for LLM to test Hallucination in Medical Domain" />
+            <img src="./assets/images/home-2.png" data-name="home-2" class="expand-img" alt="Example of Hallucination Of GPT-3.5" />
           </div>
-          <p style="color:gray; text-align: center;"><span class="multicolortext">Med-HALT</span>: A new benchmark dataset for LLM to 074 test Hallucination in Medical Domain
-          </p>
+          <p style="color:gray; text-align: center;"><span class="multicolortext">Med-HALT</span>: A new benchmark dataset for LLM to test Hallucination in Medical Domain</p>
         </div>
 
         <div class="col-md-12" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">
           <p>
-            This research paper focuses on the challenges posed by hallucinations in large language models (LLMs), particularly in the context of the medical domain. Hallucination, wherein these models generate plausible yet unverified or incorrect information, can have serious consequences in healthcare applications. We propose a new benchmark and dataset, Med-HALT (Medical Domain Hallucination Test), designed specifically to evaluate and reduce hallucinations. Med-HALT provides a diverse multinational dataset derived from medical examinations across various countries and includes multiple innovative testing modalities. Med-HALT includes two categories of tests reasoning and memory-based hallucination tests, designed to assess LLMs' problem-solving and information retrieval abilities. Our study evaluated leading LLMs, including Text Davinci, GPT-3.5, LlaMa and Falcon, revealing significant differences in their performance. The paper provides detailed insights into the dataset, promoting transparency and reproducibility. Through this work, we aim to contribute to the development of safer and more reliable language models in healthcare. Our benchmark can be found at <a href="https://github.com/medhalt/medhalt.github.io" target="_blank">https://github.com/medhalt/medhalt.github.io</a>
+            This research paper focuses on the challenges posed by hallucinations in large language models (LLMs), particularly in the context of the medical domain. Hallucination, wherein these models generate plausible yet unverified or incorrect information, can have serious consequences in healthcare applications. We propose a new benchmark and dataset, Med-HALT (Medical Domain Hallucination Test), designed specifically to evaluate and reduce hallucinations. Med-HALT provides a diverse multinational dataset derived from medical examinations across various countries and includes multiple innovative testing modalities. Med-HALT includes two categories of tests reasoning and memory-based hallucination tests, designed to assess LLMs' problem-solving and information retrieval abilities. Our study evaluated leading LLMs, including Text Davinci, GPT-3.5, LlaMa and Falcon, revealing significant differences in their performance. The paper provides detailed insights into the dataset, promoting transparency and reproducibility. Through this work, we aim to contribute to the development of safer and more reliable language models in healthcare. Our benchmark can be found at <a href="https://github.com/medhalt/medhalt" target="_blank">https://github.com/medhalt/medhalt</a>
           </p>
           <br>
 
@@ -1579,17 +1561,25 @@ li {
 
           <div class="graph-cnt">
             <div class="card">
-              <h5 class="card-header">Number of Subjects per Exam</h5>
+              <div class="card-header">
+                <h5>Number of Subjects per Exam & Cumulative Frequency of Exams</h5>
+                <div>
+                  <button class="zoom-btn" data-function="+"><img src="./assets/icons/zoom-in.svg" /></button>
+                  <button class="zoom-btn" data-function="-"><img src="./assets/icons/zoom-out.svg" /></button>
+                </div>
+              </div>
               <div class="card-body">
-                <img src="./assets/images/graph-1.png" class="expand-img" data-name="graph-1" alt="Distribution of subjects count per exam in Med-HALT dataset" />
+                <!-- <embed class="pdf-embed" src="./assets//images/subplot.pdf#toolbar=0&navpanes=0&scrollbar=0" width="100%" height="100%" type="application/pdf"> -->
+                <iframe class="pdf-embed" src="./assets//images/subplot.pdf#toolbar=0&navpanes=0" width="100%" height="100%" style="border: none;"></iframe>
+                <!-- <img src="./assets/images/graph-1.png" class="expand-img" data-name="graph-1" alt="Distribution of subjects count per exam in Med-HALT dataset" /> -->
               </div>
             </div>
-            <div class="card">
+            <!-- <div class="card">
               <h5 class="card-header">Cumulative Frequency of Exams</h5>
               <div class="card-body">
                 <img src="./assets/images/graph-2.png" class="expand-img" data-name="graph-2" alt="Cumulative Frequency Graph in the union of exams in Med-HALT dataset" />
               </div>
-            </div>
+            </div> -->
           </div>
           <br>
 
@@ -1762,7 +1752,7 @@ li {
         
         <div class="col-md-12" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">
           <h3 class=".display-3">Release and License</h3>
-          <p>The data is intended solely for research and non-commercial purposes. Its use is subject to the Terms of Use for data generated by OpenAI. If you discover any potential violations, please contact us. Additionally, the code is governed by the Apache License 2.0.</p>
+          <p>The data is intended solely for research and non-commercial purposes. Please contact <a href="mailto:medmcqa@gmail.com">medmcqa@gmail.com</a> us for more details, Additionally, the code is governed by the Apache License 2.0.</p>
           <br>
           <br>
         </div>
@@ -1789,11 +1779,11 @@ li {
     <div class="img-model model none">
       <div class="backdrop"></div>
       <div class="expand-img">
-        <!-- <img src="./assets/images/home.png" alt="" width="80%" /> -->
         <button class="model-close-btn">Close X</button>
-        <!-- <img src="./assets/images/home-2.png" alt="" width="50%" /> -->
+        <div class="img-cnt">
+          <img src="./assets/images/home-2.png" alt="" width="50%" />
+        </div>
         <p class="img-desc"></p>
-        <!-- <img src="./assets/images/graph-1.png" alt="" width="95%" /> -->
       </div>
     </div>
     
