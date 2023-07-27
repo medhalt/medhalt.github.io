@@ -12,7 +12,6 @@ const Nota = () => {
 
         const res = await fetch(`../data/nota/${file_name}.json`);
         const data = await res.json();
-        console.log(data);
         
         const testbedData = data.testbed_data;
         

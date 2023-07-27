@@ -12,7 +12,6 @@ const T2L = () => {
 
         const res = await fetch(`../data/t2l/${file_name}.json`);
         const data = await res.json();
-        console.log(data);
         
         const testbedData = data.testbed_data;
         

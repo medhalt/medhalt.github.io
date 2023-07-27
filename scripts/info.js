@@ -3,7 +3,6 @@ function Info(){
     
     const showCustom = (message) => {
         info.classList.remove("none");
-        console.log("herer", message)
         info.innerText = message;
     }
     

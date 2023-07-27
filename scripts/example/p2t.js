@@ -12,7 +12,6 @@ const P2T = () => {
 
         const res = await fetch(`../data/p2t/${file_name}.json`);
         const data = await res.json();
-        console.log(data);
         
         const testbedData = data.testbed_data;
         

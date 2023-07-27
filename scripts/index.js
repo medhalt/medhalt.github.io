@@ -56,20 +56,3 @@ exampleSelector.addEventListener("change", async (e) => {
 
 // load default example
 loadExample("example-1", taskExampleObj.fct)
-
-// zoom pdf embed
-let currPdfEmebedWidth = 100;
-const pdfEmbedCnt = document.querySelector(".graph-cnt > .card .card-body");
-const zoomBtn = document.querySelectorAll(".zoom-btn");
-
-zoomBtn.forEach(btn => {
-    btn.addEventListener("click", (e) => {
-        const result = currPdfEmebedWidth + (e.currentTarget.dataset.function === "+" ? 25 : -25);
-        if(result > 200 || result < 100) return;
-        console.log(pdfEmbedCnt)
-        pdfEmbedCnt.innerHTML = `<iframe class="pdf-embed" src="./assets//images/subplot.pdf#toolbar=0&navpanes=0" width="${result}%" height="400" style="border: none;"></iframe>`;
-        currPdfEmebedWidth = result
-    })
-})
-
-// console.log(pdfEmbed);
