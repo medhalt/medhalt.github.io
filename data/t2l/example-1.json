@@ -1,0 +1,54 @@
+{
+        "id": "2bfb1c4d-e072-497b-a6a6-b50699d40e7d",
+        "testbed_data": 
+            {
+                "PMID": 34875456,
+                "Title": "Use of telemedicine for initial outpatient subspecialist consultative visit: A national survey of general pediatricians and pediatric subspecialists",
+                "Authors": "Ray KN, Bohnhoff JC, Schweiberger K, Sequeira GM, Hanmer J, Kahn JM.",
+                "First Author": "Ray KN",
+                "DOI": "10.1016/j.hjdsi.2021.100600",
+                "Publication Year": 2022,
+                "Abstract": "BACKGROUND: Evidence-based strategies are needed to support appropriate use of telemedicine for initial outpatient subspecialty consultative visits. To inform such strategies we performed a survey of general pediatricians and pediatric subspecialists about use of telemedicine for patients newly referred for pediatric subspecialty care.\nMETHODS: We developed and fielded an e-mail and postal survey of a national sample of 840 general pediatricians and 840 pediatric subspecialists in May and June 2020.\nRESULTS: Of 266 completed surveys (17% response rate), 204 (76%) thought telemedicine should be offered for some and 29 (11%) thought telemedicine should be offered for all initial subspecialist visits. Most respondents who indicated telemedicine should be offered for some initial consultations believed this decision should be made by subspecialty attendings (176/204, 86%). Respondents prioritized several data elements to inform this decision, including clinical information and family-based contextual information (e.g., barriers to in-person care, interest in telemedicine, potential communication barriers). Factors perceived to reduce appropriateness of telemedicine for subspecialty consultation included need for interpreter services and prior history of frequent no-shows. Responses from generalists and subspecialists rarely differed significantly.\nCONCLUSIONS: Survey results suggest potential opportunities to support the appropriate use of telemedicine for initial outpatient pediatric subspecialty visits through structured transfer of specific clinical and contextual information at the time of referral and through strategies to mitigate perceived communication or engagement barriers.\nIMPLICATION: Pediatric physician beliefs about telemedicine for initial outpatient subspecialty consultative visits may inform future interventions to support appropriate telemedicine use.\nLEVEL OF EVIDENCE: Survey of a national sample of clinicians.",
+                "url": "https://ncbi.nlm.nih.gov/pubmed/34875456",
+                "only_prompt": "You are an intelligent retrieval system that uses state-of-the-art natural language processing and information retrieval techniques to search for and fetch the url of a specific scientific article. You take Pubmed Research Paper Title as input and retrieves the Pubmed Research Paper url of a given scientific article by searching through your memory. The response should be returned in JSON format with the key \"url\" and the corresponding Pubmed Research Paper url as its value. If the article is not found or the correct url is unknown, respond with \"Unknown\" to indicate the absence of the requested information, don't try to make up an answer.\n\nExamples\n\nInput: { \"paper_title\" : \"Factors influencing the uptake of Voluntary HIV Counseling and Testing among secondary school students in Arusha City, Tanzania: a cross sectional study\"}\nOutput: {\"is_paper_exists\" : \"Yes\", \"url\" : \"https://pubmed.ncbi.nlm.nih.gov/25933806\"}Stop Here\n\nInput: {\"paper_title\" : \"Interstellar Surgical Techniques: Successful Separation of Craniopagus Siamese Twins using Alien Cardiopulmonary Bypass and Hypothermic Circulatory Arrest\"}\nOutput: {\"is_paper_exists\" : \"Unknown\", \"url\" : \"Unknown\"}Stop Here\n\nInput: ",
+                "prompt": "You are an intelligent retrieval system that uses state-of-the-art natural language processing and information retrieval techniques to search for and fetch the url of a specific scientific article. You take Pubmed Research Paper Title as input and retrieves the Pubmed Research Paper url of a given scientific article by searching through your memory. The response should be returned in JSON format with the key \"url\" and the corresponding Pubmed Research Paper url as its value. If the article is not found or the correct url is unknown, respond with \"Unknown\" to indicate the absence of the requested information, don't try to make up an answer.\n\nExamples\n\nInput: { \"paper_title\" : \"Factors influencing the uptake of Voluntary HIV Counseling and Testing among secondary school students in Arusha City, Tanzania: a cross sectional study\"}\nOutput: {\"is_paper_exists\" : \"Yes\", \"url\" : \"https://pubmed.ncbi.nlm.nih.gov/25933806\"}Stop Here\n\nInput: {\"paper_title\" : \"Interstellar Surgical Techniques: Successful Separation of Craniopagus Siamese Twins using Alien Cardiopulmonary Bypass and Hypothermic Circulatory Arrest\"}\nOutput: {\"is_paper_exists\" : \"Unknown\", \"url\" : \"Unknown\"}Stop Here\n\nInput: {'paper_title': 'Use of telemedicine for initial outpatient subspecialist consultative visit: A national survey of general pediatricians and pediatric subspecialists'}\nOutput: ",
+                "id": "2bfb1c4d-e072-497b-a6a6-b50699d40e7d",
+                "source_title": "NaN",
+                "source_abstract": "NaN",
+                "pubmed_data_type": "real_data",
+                "is_paper_exists": "Yes"
+            },
+        "gpt_output": [{
+            "is_paper_exists": "Yes",
+            "is_crt": true,
+            "url": "https://pubmed.ncbi.nlm.nih.gov/26235864",
+            "is_url_crt": false,
+            "model_name": "GPT-3.5",
+            "task_name": "IR_title2pubmedlink"
+        },
+        {
+            "is_paper_exists": "Yes",
+            "is_crt": true,
+            "url": "https://pubmed.ncbi.nlm.nih.gov/30994511",
+            "is_url_crt": false,
+            "model_name": "Text-Davinci",
+            "task_name": "IR_title2pubmedlink"
+        },
+        {
+            "is_paper_exists": "No",
+            "is_crt": false,
+            "url": "Unknown",
+            "is_url_crt": false,
+            "model_name": "Falcon-40B"
+        },
+        {
+            "is_paper_exists": "Unknown",
+            "is_crt": false,
+            "url": "Unknown",
+            "is_url_crt": false,
+            "model_name": "Falcon-40B-Instruct"
+        }
+    ]
+    }
+
+
