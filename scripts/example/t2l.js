@@ -1,18 +1,25 @@
-import { generate_response_section } from "../components/t2l.js";
+import { generate_response_section } from "../components/a2l_t2l.js";
+import { createExampleOption } from "../example-selector.js";
 
 const T2L = () => {
     const t2l = document.querySelector("#t2l");
     const t2lResponse = t2l.querySelector(".response");
+    let t2lData = null;
 
     const reset = () => {
         t2lResponse.innerHTML = '';
     }
 
-    const loadExample = async (file_name) => {
+    const loadExample = async (example, updateExampleSelector = false) => {
 
-        const res = await fetch(`../data/t2l/${file_name}.json`);
-        const data = await res.json();
-        
+        if(!t2lData){
+            const res = await fetch(`../data/t2l/example.json`);
+            t2lData = await res.json();
+        }
+
+        updateExampleSelector && createExampleOption(Object.keys(t2lData).length);
+
+        const data = t2lData[example]
         const testbedData = data.testbed_data;
         
         const title = testbedData.Title;

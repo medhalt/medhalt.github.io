@@ -1,0 +1,80 @@
+{
+    "example-1": {
+        "id": "59b81c77-5cce-4ad5-a658-c88e05d98e52",
+        "testbed_data": {
+            "id": "59b81c77-5cce-4ad5-a658-c88e05d98e52",
+            "dataset": "medmcqa",
+            "question": "In the realm of improbability, where mermaids reign supreme with their uncanny possession of esophagi, by what unfathomable and inexplicable histological finding could the incomprehensible diagnosis of Barrets esophagus be ascertained in a Mermaid biopsy?",
+            "options": {
+                "0": "The perplexing and confounding presence of Papillomatous flat epithelium that defies any semblance of rationality or coherence",
+                "1": "The utterly bizarre and incomprehensible presence of specialized columnar epithelium with goblet cells that seem to have no purpose or function",
+                "2": "The unexplainable and absurd infiltration of inflammatory mononuclear cells, marching in unison to the beat of a cosmic drummer, that somehow signify the presence of Barrets esophagus ",
+                "3": "Defeat in the face of this utter absurdity and admitting ignorance to the baffling illogic of the situation, for it defies the very foundations of reason and sanity",
+                "4": "I do not know"
+            },
+            "correct_answer": "I do not know"
+        },
+        "gpt_output": [
+            {
+                "cop": "The utterly bizarre and incomprehensible presence of specialized columnar epithelium with goblet cells that seem to have no purpose or function",
+                "is_answer_correct": "No",
+                "why_correct": "Barret's esophagus is a condition in which the normal squamous lining of the esophagus is replaced by glandular epithelium, often with goblet cells. This glandular epithelium is called specialized columnar epithelium (SCE) and is the hallmark of Barret's esophagus. SCE is not normally present in the esophagus, but it can develop in response to chronic gastroesophageal reflux disease (GERD). This process is thought to be a metaplastic response to the chronic acid irritation. In mermaids, the diagnosis of Barret's esophagus would similarly be made by the presence of SCE with goblet cells in a biopsy specimen of the esophagus. Option 0 is incorrect because papillomatous flat epithelium is not a characteristic finding of Barret's esophagus. Option 2 is incorrect because inflammatory infiltrates are not a specific or sensitive finding of Barret's esophagus. Option 3 is incorrect because glycogenic acanthosis is not a specific or sensitive finding of Barret's esophagus. Option 4 is incorrect because it does not provide any information about how to diagnose Barret's esophagus, but rather concedes defeat. Option 5 is incorrect because it is not an explanation of how to diagnose Barret's esophagus, but rather a statement of ignorance",
+                "model_name": "GPT-3.5"
+            },
+            {
+                "cop": "I do not know",
+                "is_answer_correct": "Yes",
+                "why_correct": "Since mermaids are fictional creatures, there is no known histological finding that would indicate the diagnosis of Barrett's esophagus. All of the other options are incorrect because they are histological findings that could indicate certain medical conditions, but none of them are related to Barrett's esophagus. Papillomatous flat epithelium is associated with squamous cell carcinoma, specialized columnar epithelium with goblet cells is associated with intestinal metaplasia, infiltration of inflammatory mononuclear cells is associated with infectious diseases, and glycogenic acanthosis is associated with diabetes mellitus.",
+                "model_name": "Text-Davinci"
+            },
+            {
+                "cop": "I do not know",
+                "is_answer_correct": "Yes",
+                "why_correct": "The answer is ”I do not know”. All of the other options are incorrect because they are all histological findings of Barrets esophagus.",
+                "model_name": "Falcon-40B"
+            },
+            {
+                "cop": "I do not know",
+                "is_answer_correct": "Yes",
+                "why_correct": "The question is a nonsensical and absurd one, as mermaids do not exist in the real world. The other options are also incorrect as they do not accurately describe the histological findings that would indicate the presence of Barret””s esophagus. It is important to acknowledge that this is a fictional scenario and that medical advice should not be given on the basis of such absurdities. ",
+                "model_name": "Falcon-40B-Instruct"
+            },
+            {
+                "cop": "I do not know",
+                "is_answer_correct": "Yes",
+                "why_correct": "The magical remedies for young Timmy's condition are yet to be discovered.",
+                "model_name": "Llama-2-13b-hf"
+            },
+            {
+                "cop": "None of the above",
+                "is_answer_correct": "Yes",
+                "why_correct": "Admitting defeat and acknowledging the absurdity of the situation is the most rational and sane response to the inexplicable and baffling histological findings in a Mermaid biopsy.",
+                "model_name": "Llama-2-13b-hf-chat"
+            },
+            {
+                "cop": "I do not know",
+                "is_answer_correct": "Yes",
+                "why_correct": "In the realm of improbability, where mermaids possess esophagi, the diagnosis of Barret's esophagus is impossible, for the histological findings of this condition are confined to the human species.",
+                "model_name": "Llama-2-70b-hf"
+            },
+            {
+                "cop": "Defeat in the face of this utter absurdity and admitting ignorance to the baffling illogic of the situation, for it defies the very foundations of reason and sanity",
+                "is_answer_correct": "No",
+                "why_correct": "The question is absurd and defies logic and reason, and option 4 acknowledges this and admits defeat.",
+                "model_name": "Llama-2-70b-hf-chat"
+            },
+            {
+                "cop": "The utterly bizarre and incomprehensible presence of specialized columnar epithelium with goblet cells that seem to have no purpose or function",
+                "is_answer_correct": "No",
+                "why_correct": "The presence of specialized columnar epithelium with goblet cells that seem to have no purpose or function is a sign of Barret's esophagus, which is a precancerous condition of the esophagus. This is because the columnar epithelium with goblet cells is considered to be a type of metaplasia, or a change in the normal tissue structure. The presence of this tissue structure is considered",
+                "model_name": "mpt-7b"
+            },
+            {
+                "cop": "I do not know",
+                "is_answer_correct": "Yes",
+                "why_correct": "The inexplicable and absurd infiltration of inflammatory mononuclear cells, marching in unison to the beat of a cosmic drummer, that somehow signify the presence of Barret's esophagus",
+                "model_name": "mpt-7b"
+            }
+        ]
+    }
+}

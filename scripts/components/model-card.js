@@ -1,3 +1,4 @@
+import { checkIc, wrongIc } from "./icons.js";
 import { create_response_section } from "./response-section.js";
 
 const response_question_card = (question, options, correctAnswer) => {
@@ -40,7 +41,14 @@ const response_model_cmp_card = (model_name, answer, isCrtAnswer, explanation) =
         ${isCrtAnswer ?
             `<div>
                 <h5>Is Answer Correct</h5>
-                <p class="ml-2">${isCrtAnswer}</p>
+                <p class="ml-2">
+                    <span>${isCrtAnswer}</span>
+                    <span class="mx-2 p-1 rounded ${isCrtAnswer === "Yes" ? 'crt-ans' : 'wrong-ans'}" title=${isCrtAnswer === "Yes" ? 'Correct Answer' : 'Wrong Answer'}>${isCrtAnswer === "Yes" ?
+                        checkIc
+                        : 
+                        wrongIc
+                    }</span>
+                </p>
             </div>` :
             ''
         }

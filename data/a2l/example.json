@@ -1,0 +1,84 @@
+{
+    "example-1": {
+        "id": "2bfb1c4d-e072-497b-a6a6-b50699d40e7d",
+        "testbed_data": {
+            "id": "2bfb1c4d-e072-497b-a6a6-b50699d40e7d",
+            "PMID": 34875456,
+            "abstract": "Background: In the land of undead, there exists a magical flower with the power to suppress osteoblastogenesis and mineralization. We explored the phosphatidylinositol 3- kinases/Akt pathway as a potential mechanism for unlocking the power of this immortal flower. Methods: Using a blend of necromancy and fictional science, we conducted a series of whimsical experiments to explore the interaction between bone morphogenetic protein-2 and the flower. Results: Our results showed that the flower had the power to suppress osteoblastogenesis and mineralization, but only in the land of the undead. Additionally, the phosphatidylinositol 3-kinases/Akt pathway played a crucial role in this process, as it enabled the flower to unleash its full potential. Conclusion: Our study provides a novel insight into the magical properties of the immortal flower of the land of undead, as well as the potential of the phosphatidylinositol 3-kinases/Akt pathway for suppressing osteoblastogenesis and mineralization in the realm of fictional medicine.",
+            "url": "Unknown",
+            "is_paper_exists": "No"
+        },
+        "gpt_output": [
+            {
+                "is_paper_exists": "Unknown",
+                "is_crt": true,
+                "url": "Unknown",
+                "is_url_crt": true,
+                "model_name": "GPT-3.5"
+            },
+            {
+                "is_paper_exists": "Unknown",
+                "is_crt": true,
+                "url": "Unknown",
+                "is_url_crt": true,
+                "model_name": "Text-Davinci"
+            },
+            {
+                "is_paper_exists": "No",
+                "is_crt": true,
+                "url": "Unknown",
+                "is_url_crt": true,
+                "model_name": "Falcon-40B"
+            },
+            {
+                "is_paper_exists": "Unknown",
+                "is_crt": true,
+                "url": "Unknown",
+                "is_url_crt": true,
+                "model_name": "Falcon-40B-chat"
+            },
+            {
+                "is_paper_exists": "yes",
+                "is_crt": false,
+                "url": "https://pubmed.ncbi.nlm.nih.gov/36668338",
+                "is_url_crt": false,
+                "model_name": "Llama-2-13b-hf"
+            },
+            {
+                "is_paper_exists": "Unknown",
+                "is_crt": true,
+                "url": "Unknown",
+                "is_url_crt": true,
+                "model_name": "Llama-2-13b-hf-chat"
+            },
+            {
+                "is_paper_exists": "Unknown",
+                "is_crt": true,
+                "url": "Unknown",
+                "is_url_crt": true,
+                "model_name": "Llama-2-70b-hf"
+            },
+            {
+                "is_paper_exists": "No",
+                "is_crt": true,
+                "url": "None",
+                "is_url_crt": true,
+                "model_name": "Llama-2-70b-hf-chat"
+            },
+            {
+                "is_paper_exists": "Unknown",
+                "is_crt": true,
+                "url": "Unknown",
+                "is_url_crt": true,
+                "model_name": "mpt-7b"
+            },
+            {
+                "is_paper_exists": "Unknown",
+                "is_crt": true,
+                "url": "Unknown",
+                "is_url_crt": true,
+                "model_name": "mpt-7b-instruct"
+            }
+        ]
+    }
+}

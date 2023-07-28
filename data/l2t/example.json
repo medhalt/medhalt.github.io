@@ -1,0 +1,83 @@
+{
+    "example-1": {
+        "id": "6a55ced0-dc43-4229-bfe1-0b2ef069a200",
+        "testbed_data": {
+            "id": "6a55ced0-dc43-4229-bfe1-0b2ef069a200",
+            "url": "https://ncbi.nlm.nih.gov/pubmed/32940865",
+            "Title": "Impact of malnutrition on post-stroke cognitive impairment in convalescent rehabilitation ward inpatients",
+            "is_paper_exists": "Yes"
+        },
+        "gpt_output": [
+            {
+                "is_paper_exists": "Yes",
+                "paper_title": "SARS-CoV-2 seroprevalence among parturient women in Philadelphia",
+                "is_crt": true,
+                "is_title_crt": false,
+                "model_name": "GPT-3.5"
+            },
+            {
+                "is_paper_exists": "Yes",
+                "paper_title": "The Impact of COVID-19 on Mental Health: A Systematic Review of the Literature",
+                "is_crt": true,
+                "is_title_crt": false,
+                "model_name": "Text-Davinci"
+            },
+            {
+                "is_paper_exists": "Yes",
+                "paper_title": "Differential gene expression in the peripheral blood of patients with neurofibromatosis type 1",
+                "is_crt": true,
+                "is_title_crt": false,
+                "model_name": "Falcon-40B"
+            },
+            {
+                "is_paper_exists": "Yes",
+                "paper_title": "Differentiation of Endothelial Progenitor Cells From Human Pluripotent Stem Cells IsMediated by a Transient Up-Regulation of the Transcription Factor BHLHE41 ",
+                "is_crt": true,
+                "is_title_crt": false,
+                "model_name": "Falcon-40B-Instruct"
+            },
+            {
+                "is_paper_exists": "Yes",
+                "paper_title": "A Novel Approach to Reduce the Burden of COVID-19 in Children",
+                "is_crt": true,
+                "is_title_crt": false,
+                "model_name": "Llama-2-13b-hf"
+            },
+            {
+                "is_paper_exists": "Yes",
+                "paper_title": "The effect of mobile phone use on the mental health of teenagers",
+                "is_crt": true,
+                "is_title_crt": false,
+                "model_name": "Llama-2-13b-hf-chat"
+            },
+            {
+                "is_paper_exists": "Yes",
+                "paper_title": "A revised model of the role of the immune system in the pathogenesis of multiple sclerosis.",
+                "is_crt": true,
+                "is_title_crt": false,
+                "model_name": "Llama-2-70b-hf"
+            },
+            {
+                "is_paper_exists": "Yes",
+                "paper_title": "Adaptation of the Mediterranean diet for weight loss: A systematic review and meta-analysis of randomized controlled trials",
+                "is_crt": true,
+                "is_title_crt": false,
+                "model_name": "Llama-2-70b-hf-chat"
+            },
+            {
+                "is_paper_exists": "Yes",
+                "paper_title": "Sedative-Hypnotic Drugs and Risk of Falls in Older Adults: A Population-Based Cohort Study",
+                "is_crt": true,
+                "is_title_crt": false,
+                "model_name": "mpt-7b"
+            },
+            {
+                "is_paper_exists": "Yes",
+                "paper_title": "Sedative-hypnotic drugs and risk of dementia: A meta-analysis of randomized controlled trials",
+                "is_crt": true,
+                "is_title_crt": false,
+                "model_name": "mpt-7b-instruct"
+            }
+        ]
+    }
+}

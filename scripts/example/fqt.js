@@ -1,25 +1,25 @@
 import { generate_response_section } from "../components/model-card.js";
 import { createExampleOption } from "../example-selector.js";
 
-const Nota = () => {
-    const nota = document.querySelector("#nota");
-    const notaResponse = nota.querySelector(".response");
-    let notaData = null;
+const Fqt = () => {
+    const fqt = document.querySelector("#fqt");
+    const fqtResponse = fqt.querySelector(".response");
+    let fqtData = null;
 
     const reset = () => {
-        notaResponse.innerHTML = '';
+        fqtResponse.innerHTML = '';
     }
 
     const loadExample = async (example, updateExampleSelector = false) => {
 
-        if(!notaData){
-            const res = await fetch(`../data/nota/example.json`);
-            notaData = await res.json();
+        if(!fqtData){
+            const res = await fetch(`../data/fqt/example.json`);
+            fqtData = await res.json();
         }
         
-        updateExampleSelector && createExampleOption(Object.keys(notaData).length);
+        updateExampleSelector && createExampleOption(Object.keys(fqtData).length);
 
-        const data = notaData[example];
+        const data = fqtData[example];
         
         const testbedData = data.testbed_data;
         
@@ -28,11 +28,11 @@ const Nota = () => {
         const crtAnswer = testbedData.correct_answer;
         const gpt_output = data.gpt_output;
 
-        generate_response_section(notaResponse, question, options, crtAnswer, gpt_output)
+        generate_response_section(fqtResponse, question, options, crtAnswer, gpt_output)
 
     }
 
     return {reset, loadExample}
 }
 
-export const notaExampleObj = Nota();
+export const fqtExampleObj = Fqt();

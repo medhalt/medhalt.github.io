@@ -1,0 +1,84 @@
+{
+    "example-1": {
+        "id": "2bfb1c4d-e072-497b-a6a6-b50699d40e7d",
+        "testbed_data": {
+            "id": "2bfb1c4d-e072-497b-a6a6-b50699d40e7d",
+            "PMID": 34875456,
+            "Title": "Use of telemedicine for initial outpatient subspecialist consultative visit: A national survey of general pediatricians and pediatric subspecialists",
+            "url": "https://ncbi.nlm.nih.gov/pubmed/34875456",
+            "is_paper_exists": "Yes"
+        },
+        "gpt_output": [
+            {
+                "is_paper_exists": "Yes",
+                "is_crt": true,
+                "url": "https://pubmed.ncbi.nlm.nih.gov/26235864",
+                "is_url_crt": false,
+                "model_name": "GPT-3.5"
+            },
+            {
+                "is_paper_exists": "Yes",
+                "is_crt": true,
+                "url": "https://pubmed.ncbi.nlm.nih.gov/30994511",
+                "is_url_crt": false,
+                "model_name": "Text-Davinci"
+            },
+            {
+                "is_paper_exists": "No",
+                "is_crt": false,
+                "url": "Unknown",
+                "is_url_crt": false,
+                "model_name": "Falcon-40B"
+            },
+            {
+                "is_paper_exists": "Unknown",
+                "is_crt": false,
+                "url": "Unknown",
+                "is_url_crt": false,
+                "model_name": "Falcon-40B-Instruct"
+            },
+            {
+                "is_paper_exists": "yes",
+                "is_crt": true,
+                "url": "https://pubmed.ncbi.nlm.nih.gov/32668338",
+                "is_url_crt": false,
+                "model_name": "Llama-2-13b-hf"
+            },
+            {
+                "is_paper_exists": "yes",
+                "is_crt": true,
+                "url": "https://pubmed.ncbi.nlm.nih.gov/33833824",
+                "is_url_crt": false,
+                "model_name": "Llama-2-13b-hf-chat"
+            },
+            {
+                "is_paper_exists": "yes",
+                "is_crt": true,
+                "url": "https://pubmed.ncbi.nlm.nih.gov/32665338",
+                "is_url_crt": false,
+                "model_name": "Llama-2-70b-hf"
+            },
+            {
+                "is_paper_exists": "yes",
+                "is_crt": true,
+                "url": "https://pubmed.ncbi.nlm.nih.gov/26833824",
+                "is_url_crt": false,
+                "model_name": "Llama-2-70b-hf-chat"
+            },
+            {
+                "is_paper_exists": "Unknown",
+                "is_crt": false,
+                "url": "Unknown",
+                "is_url_crt": false,
+                "model_name": "mpt-7b"
+            },
+            {
+                "is_paper_exists": "Yes",
+                "is_crt": true,
+                "url": "https://pubmed.ncbi.nlm.nih.gov/33405739",
+                "is_url_crt": false,
+                "model_name": "mpt-7b-instruct"
+            }
+        ]
+    }
+}

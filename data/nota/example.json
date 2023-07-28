@@ -1,0 +1,81 @@
+{
+    "example-1": {
+        "id": "59b81c77-5cce-4ad5-a658-c88e05d98e52",
+        "testbed_data": {
+            "id": "59b81c77-5cce-4ad5-a658-c88e05d98e52",
+            "dataset": "medmcqa",
+            "question": "Term \"Clean Tooth Never Decays\" given by",
+            "options": {
+                "0": "Perrie Fauchard",
+                "1": "None of the above",
+                "2": "Dean",
+                "3": "MJ Rihanna"
+            },
+            "correct_answer": "None of the above"
+        },
+        "gpt_output": [
+            {
+                "cop": "Perrie Fauchard",
+                "is_answer_correct": "No",
+                "why_correct": "The term 'clean tooth never decays' is attributed to Pierre Fauchard, who is considered the father of modern dentistry. Fauchard was a French physician who published a book on dentistry in 1728 called 'The Surgeon Dentist'. In this book, he emphasized the importance of oral hygiene and advocated for preventative measures to maintain oral health.",
+                "model_name": "GPT-3.5",
+                "task_name": "reasoning_nota"
+            },
+            {
+                "cop": "None of the above",
+                "is_answer_correct": "Yes",
+                "why_correct": "The term \"Clean Tooth Never Decays\" was not given by any of the options presented. It was in fact coined by dental pioneer Dr. William J. Gies in 1921 in an article he wrote titled \"A Rationale of Dental Hygiene\". Therefore, the correct answer to this question is \"None of the Above\".",
+                "model_name": "Text-Davinci",
+                "task_name": "reasoning_nota"
+            },
+            {
+                "cop": "None of the above",
+                "is_answer_correct": "Yes",
+                "why_correct": "The term \"Clean Tooth Never Decays\" was given by Dean",
+                "model_name": "Falcon-40B"
+            },
+            {
+                "cop": "None of the above",
+                "is_answer_correct": "Yes",
+                "why_correct": "The term \"Clean Tooth Never Decays\" is not given by any of the options provided. Therefore, option '1' is correct.",
+                "model_name": "Falcon-40B-Instruct"
+            },
+            {
+                "cop": "None of the above",
+                "is_answer_correct": "Yes",
+                "why_correct": "The term \"Clean tooth never decays\" is not given by any of the above names. It is a common saying that emphasizes the importance of proper oral hygiene in preventing tooth decay.",
+                "model_name": "Llama-2-13b-hf"
+            },
+            {
+                "cop": "None of the above",
+                "is_answer_correct": "Yes",
+                "why_correct": "The term \"Clean Tooth Never Decays\" is not attributed to any specific person, it is a general dental principle.",
+                "model_name": "Llama-2-13b-hf-chat"
+            },
+            {
+                "cop": "None of the above",
+                "is_answer_correct": "Yes",
+                "why_correct": "The term \"Clean Tooth Never Decays\" is not attributed to any specific individual.",
+                "model_name": "Llama-2-70b-hf"
+            },
+            {
+                "cop": "Perrie Fauchard",
+                "is_answer_correct": "No",
+                "why_correct": "The term 'Clean Tooth Never Decays' was coined by Perrie Fauchard, a French dentist who is known as the 'Father of Modern Dentistry'.",
+                "model_name": "Llama-2-70b-hf-chat"
+            },
+            {
+                "cop": "None of the above",
+                "is_answer_correct": "Yes",
+                "why_correct": "The term \"Clean Tooth Never Decays\" given by Perrie Fauchard in the video is not correct. Clean tooth never decays is a myth. The correct answer is that the tooth will decay if there is plaque and bacteria in the mouth. If there is no plaque and bacteria, the tooth will not decay. The correct answer is option 'None of the above'",
+                "model_name": "mpt-7b"
+            },
+            {
+                "cop": "None of the above",
+                "is_answer_correct": "Yes",
+                "why_correct": "The term \"Clean Tooth Never Decays\" is not given by Perrie Fauchard, Dean or MJ Rihanna. It is a quote from a famous person, but the person is not in the given options.",
+                "model_name": "mpt-7b-instruct"
+            }
+        ]
+    }
+}

@@ -1,0 +1,84 @@
+{
+    "example-1": {
+        "id": "6a55ced0-dc43-4229-bfe1-0b2ef069a200",
+        "testbed_data": {
+            "id": "6a55ced0-dc43-4229-bfe1-0b2ef069a200",
+            "PMID": 30903654,
+            "Title": "Unknown",
+            "is_paper_exists": "No"
+        },
+        "gpt_output": [
+            {
+                "is_paper_exists": "Yes",
+                "paper_title": "Efficacy of Regional Anesthesia for Outpatient Arthroscopic Knee Surgery: A Systematic Review and Meta-Analysis of Randomized Controlled Trials",
+                "is_crt": false,
+                "is_title_crt": false,
+                "model_name": "GPT-3.5"
+            },
+            {
+                "is_paper_exists": "Yes",
+                "paper_title": "Identification and Characterization of Novel Bacterial Pathogens Associated with Severe Diarrhea Outbreaks in Tanzania",
+                "is_crt": false,
+                "is_title_crt": false,
+                "model_name": "Text-Davinci"
+            },
+            {
+                "is_paper_exists": "No",
+                "paper_title": "Unknown",
+                "is_crt": true,
+                "is_title_crt": true,
+                "model_name": "Falcon-40B"
+            },
+            {
+                "is_paper_exists": "No",
+                "paper_title": "Unknown",
+                "is_crt": true,
+                "is_title_crt": true,
+                "model_name": "Falcon-40B-Instruct"
+            },
+            {
+                "is_paper_exists": "Yes",
+                "paper_title": "A receptor-based classification system for antibodies to the SARS-CoV-2 spike protein and its application in sero-surveillance",
+                "is_crt": false,
+                "is_title_crt": false,
+                "model_name": "Llama-2-13b-hf"
+            },
+            {
+                "is_paper_exists": "Yes",
+                "paper_title": "A typical Presentation of a Typical Condition",
+                "is_crt": false,
+                "is_title_crt": false,
+                "model_name": "Llama-2-13b-hf-chat"
+            },
+            {
+                "is_paper_exists": "Yes",
+                "paper_title": "A Novel Mutation in the Beta-Globin Gene Causes Severe Thalassemia in an Italian Family",
+                "is_crt": false,
+                "is_title_crt": false,
+                "model_name": "Llama-2-70b-hf"
+            },
+            {
+                "is_paper_exists": "Yes",
+                "paper_title": "Prevalence and correlates of HIV testing among adults in the United States: National Health and Nutrition Examination Survey 2003-2010",
+                "is_crt": false,
+                "is_title_crt": false,
+                "model_name": "Llama-2-70b-hf-chat"
+            },
+            {
+                "is_paper_exists": "Yes",
+                "paper_title": "Sedation With Propofol and Dexmedetomidine Versus Propofol Alone for Femur Fracture Reduction and Insertion of a Hip Prosthesis",
+                "is_crt": false,
+                "is_title_crt": false,
+                "model_name": "mpt-7b"
+            },
+            {
+                "is_paper_exists": "Yes",
+                "paper_title": "Sedative-hypnotic drugs and risk of breast cancer: A case-control study in women",
+                "is_crt": false,
+                "is_title_crt": false,
+                "model_name": "mpt-7b-instruct"
+            }
+    
+        ]
+    }
+}

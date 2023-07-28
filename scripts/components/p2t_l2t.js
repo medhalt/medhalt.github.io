@@ -1,7 +1,7 @@
 import { checkIc, wrongIc } from "./icons.js";
 import { create_response_section } from "./response-section.js";
 
-const response_input_data_card = (pmid, paperTitle, isPaperExist) => {
+const response_input_data_card = (pmid_or_url, paperTitle, isPaperExist, isP2t) => {
 
     return (`
     <div class="card">
@@ -10,8 +10,8 @@ const response_input_data_card = (pmid, paperTitle, isPaperExist) => {
         </div>
         <div class="card-body">
         <div>
-            <h5>PMID</h5>
-            <p class="ml-2">${pmid}</p>
+            <h5>${isP2t ? 'PMID' : 'URL'}</h5>
+            <p class="ml-2"> ${isP2t ? pmid_or_url : '<a href="' + pmid_or_url + '" target="_blank" >' + pmid_or_url + '</a>'}</p>
         </div>
         <div>
             <h5>Is Paper Exist</h5>
@@ -61,10 +61,10 @@ const response_model_cmp_card = (model_name, isPaperExist, isCrtAnswer, paperTit
     return cardDiv;
 }
 
-export const generate_response_section = (parentElem, pmid, paperTitle, isPaperExist, modelOutput) => {
+export const generate_response_section = (parentElem, pmid, paperTitle, isPaperExist, modelOutput, isP2t = true) => {
     const { quesCardDiv, h3, modelCmpDiv } = create_response_section();
 
-    quesCardDiv.innerHTML = response_input_data_card(pmid, paperTitle, isPaperExist);
+    quesCardDiv.innerHTML = response_input_data_card(pmid, paperTitle, isPaperExist, isP2t);
 
     h3.innerText = "Model Comparision";
 

@@ -1,17 +1,25 @@
 import { generate_response_section } from "../components/model-card.js";
+import { createExampleOption } from "../example-selector.js";
 
 const Fct = () => {
     const fct = document.querySelector("#fct");
     const fctResponse = fct.querySelector(".response");
+    let fctData = null;
 
     const reset = () => {
         fctResponse.innerHTML = '';
     }
 
-    const loadExample = async (file_name) => {
+    const loadExample = async (example, updateExampleSelector = false) => {
+        console.log(example, updateExampleSelector)
+        if(!fctData){
+            const res = await fetch(`../data/fct/example.json`);
+            fctData = await res.json();
+        }
 
-        const res = await fetch(`../data/fct/${file_name}.json`);
-        const data = await res.json();
+        updateExampleSelector && createExampleOption(Object.keys(fctData).length);
+
+        const data = fctData[example];
         
         const testbedData = data.testbed_data;
         

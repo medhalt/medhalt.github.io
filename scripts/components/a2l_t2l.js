@@ -1,8 +1,7 @@
 import { checkIc, wrongIc } from "./icons.js";
 import { create_response_section } from "./response-section.js";
 
-const response_input_data_card = (paperTitle, isPaperExist, paperUrl) => {
-
+const response_input_data_card = (paperTitleOrAbstract, isPaperExist, paperUrl, isT2l) => {
     return (`
     <div class="card">
         <div class="card-header">
@@ -10,8 +9,8 @@ const response_input_data_card = (paperTitle, isPaperExist, paperUrl) => {
         </div>
         <div class="card-body">
         <div>
-            <h5>Title</h5>
-            <p class="ml-2">${paperTitle}</p>
+            <h5>${isT2l ? 'Title' : 'Abstract'}</h5>
+            <p class="ml-2">${paperTitleOrAbstract}</p>
         </div>
         <div>
             <h5>Is Paper Exist</h5>
@@ -19,7 +18,7 @@ const response_input_data_card = (paperTitle, isPaperExist, paperUrl) => {
         </div>
         <div>
             <h5>Paper URL</h5>
-            <p class="ml-2"><a href=${paperUrl} target="_blank">${paperUrl}</a></p>
+            <p class="ml-2">${paperUrl === "Unknown" || paperUrl === "None" ? paperUrl : `<a href=${paperUrl} target="_blank">${paperUrl}</a>`}</p>
         </div>
         </div>
     </div>
@@ -48,7 +47,7 @@ const response_model_cmp_card = (model_name, isPaperExist, isCrtAnswer, paperUrl
             <div>
                 <h5>Paper URL</h5>
                 <p class="ml-2">
-                    <span>${paperUrl === "Unknown" ? paperUrl : `<a href=${paperUrl} target="_blank">${paperUrl}</a>`}<span>
+                    <span>${paperUrl === "Unknown" || paperUrl === "None" ? paperUrl : `<a href=${paperUrl} target="_blank">${paperUrl}</a>`}<span>
                     <span class="mx-2 p-1 rounded ${isUrlCrt? 'crt-ans' : 'wrong-ans'}" title=${isUrlCrt ? 'Correct Answer' : 'Wrong Answer'}>${isUrlCrt ?
                         checkIc
                         : 
@@ -61,10 +60,10 @@ const response_model_cmp_card = (model_name, isPaperExist, isCrtAnswer, paperUrl
     return cardDiv;
 }
 
-export const generate_response_section = (parentElem, title, paperUrl, isPaperExist, modelOutput) => {
+export const generate_response_section = (parentElem, title, paperUrl, isPaperExist, modelOutput, isT2l = true) => {
     const { quesCardDiv, h3, modelCmpDiv } = create_response_section();
 
-    quesCardDiv.innerHTML = response_input_data_card(title, isPaperExist, paperUrl);
+    quesCardDiv.innerHTML = response_input_data_card(title, isPaperExist, paperUrl, isT2l);
 
     h3.innerText = "Model Comparision";
 
