@@ -53,9 +53,9 @@ navBtns.forEach(btn => {
 
 exampleSelector.addEventListener("change", async (e) => {
     const value = e.currentTarget.value;
-    console.log(exampleSelector, e.currentTarget)
+    // console.log(exampleSelector, e.currentTarget)
     exampleSelector.value = value;
-    console.log(value)
+    // console.log(value)
     if(value === "nil") {
         info.showDefault();
         taskExampleObj[currTask].reset();

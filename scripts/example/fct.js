@@ -11,7 +11,7 @@ const Fct = () => {
     }
 
     const loadExample = async (example, updateExampleSelector = false) => {
-        console.log(example, updateExampleSelector)
+        // console.log(example, updateExampleSelector)
         if(!fctData){
             const res = await fetch(`../data/fct/example.json`);
             fctData = await res.json();
