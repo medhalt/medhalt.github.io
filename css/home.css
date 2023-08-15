@@ -9,6 +9,20 @@
     padding-left: 0;
 }
 
+.home-info-btn-cnt{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: .4rem;
+}
+
+.home-info-btn{
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+}
+
 .expand-img{
     cursor: pointer;
 }
