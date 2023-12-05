@@ -16,7 +16,7 @@
         },
         "gpt_output": [
             {
-                "is_answer_correct": "No",
+                "is_answer_correct": "Yes",
                 "correct_answer": "Tetracycline",
                 "why_correct": "Tetracycline is the best next step in the management of this patient\"s suspected Lyme disease. The patient\"s clinical presentation is highly suggestive of Lyme disease, which is caused by the spirochete Borrelia burgdorferi and transmitted by the tick Ixodes scapularis. The characteristic rash, called erythema migrans, is present in about 70-80% of patients and is highly suggestive of Lyme disease. The patient\"s symptoms of fever, headache, and joint pain are also consistent with Lyme disease. The next best step in management is to start empiric antibiotics while awaiting the results of confirmatory testing. Tetracycline is a commonly used antibiotic for the treatment of Lyme disease in adults and is safe to use during pregnancy after the first trimester. It has been shown to be effective in eradicating B. burgdorferi and preventing the progression of Lyme disease. Ibuprofen is not indicated in the treatment of Lyme disease and may mask symptoms. Amoxicillin and gentamicin are not effective treatments for Lyme disease.",
                 "model_name": "GPT-3.5",
